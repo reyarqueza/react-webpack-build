@@ -1,0 +1,36 @@
+{
+  "name": "react-micro-build",
+  "version": "1.0.0",
+  "description": "Minimum build system for React with just Babel and Webpack.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./start-server.js",
+    "build": "node ./node_modules/webpack/bin/webpack.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reyarqueza/react-micro-build.git"
+  },
+  "keywords": [
+    "react",
+    "build"
+  ],
+  "author": "Rey Arqueza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reyarqueza/react-micro-build/issues"
+  },
+  "homepage": "https://github.com/reyarqueza/react-micro-build#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "webpack": "^3.11.0"
+  },
+  "dependencies": {
+    "node-http-server": "^8.1.2"
+  }
+}
