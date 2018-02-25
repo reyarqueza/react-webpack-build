@@ -1,33 +1,35 @@
 {
   "name": "react-micro-build",
   "version": "1.0.0",
-  "description": "Minimum build system for React with just Babel and Webpack.",
+  "description": "Minimum build system for React and Webpack.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./start-server.js",
-    "build": "node ./node_modules/webpack/bin/webpack.js"
+    "start": "npx webpack --watch --config webpack.config.dev.js & node ./start-server.js",
+    "build": "npx webpack --watch --config webpack.config.prod.js & node ./start-server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/reyarqueza/react-micro-build.git"
+    "url": "git+https://github.com/reyarqueza/react-webpack-build.git"
   },
   "keywords": [
     "react",
+    "webpack",
     "build"
   ],
   "author": "Rey Arqueza",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/reyarqueza/react-micro-build/issues"
+    "url": "https://github.com/reyarqueza/react-webpack-build/issues"
   },
-  "homepage": "https://github.com/reyarqueza/react-micro-build#readme",
+  "homepage": "https://github.com/reyarqueza/react-webpack-build#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-react": "^6.24.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "uglifyjs-webpack-plugin": "^1.2.2",
     "webpack": "^3.11.0"
   },
   "dependencies": {
