@@ -1,16 +1,20 @@
-const server = require('./node_modules/node-http-server/server/Server.js');
+/*
+ * This express server just sends back the index.html page so we can use HTML5 history from the SPA client
+ */
 
-//start the server with a config
-server.deploy({
-    verbose: false,
-    port: 8000,
-    root: `${__dirname}/public/`
-}, () => {
-    console.log('Server is ready at:');
-    console.log('---------------------')
-    console.log('http://localhost:8000');
-    console.log('---------------------\n')
-    console.log('After an edit/save of a source file, please do the following:\n');
-    console.log('npm build');
-    console.log('refresh your browser');
-});
+const express = require('express');
+const path = require('path');
+const port = process.env.PORT || 8080;
+const app = express();
+
+app.use(express.static(__dirname + '/public'));
+app.get('*', function (request, response) {
+  response.sendFile(path.resolve(__dirname, 'public', 'index.html'));
+})
+app.listen(port);
+
+console.log('Server is ready at:');
+console.log('---------------------');
+console.log('http://localhost:' + port);
+console.log('---------------------\n');
+console.log('After an edit/save of a source file, please refresh your browser:\n');
