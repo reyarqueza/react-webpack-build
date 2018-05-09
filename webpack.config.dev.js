@@ -2,10 +2,11 @@ const config = {
     entry: './src/index.js',
     devtool: 'inline-source-map',
     output: {
-      filename: './public/js/bundle.js'
+      filename: './js/bundle.js',
+      path: __dirname + '/public'
     },
     module: {
-        loaders: [
+        rules: [
             {
                 test: /.jsx?$/,
                 loader: 'babel-loader',

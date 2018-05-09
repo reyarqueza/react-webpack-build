@@ -13,10 +13,11 @@ const config = {
         })
     ],
     output: {
-      filename: './public/js/bundle.js'
+        filename: './js/bundle.js',
+        path: __dirname + '/public'
     },
     module: {
-        loaders: [
+        rules: [
             {
                 test: /.jsx?$/,
                 loader: 'babel-loader',
