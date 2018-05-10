@@ -8,7 +8,6 @@ import {
 import Dashboard from './jsx/Dashboard.jsx';
 import Login from './jsx/Login.jsx';
 import User from './jsx/User.jsx';
-import Wrapper from './jsx/Wrapper.jsx';
 
 ReactDOM.render(
     <Router>
