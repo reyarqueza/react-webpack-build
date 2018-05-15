@@ -7,13 +7,7 @@
 Git Clone this project:
 
 ```
-git clone https://github.com/reyarqueza/react-webpack-build.git
-```
-
-Rename the directory to [your-project-directory]
-
-```
-mv react-webpack-build [your-project-directory]
+git clone https://github.com/reyarqueza/react-webpack-build.git [your-project-directory]
 ```
 
 Initialize git to your own repository. 
