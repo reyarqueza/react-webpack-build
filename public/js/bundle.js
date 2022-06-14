@@ -15,7 +15,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (function () {
-  console.log('React.version', react__WEBPACK_IMPORTED_MODULE_0__.version);
+  console.log("React.version", react__WEBPACK_IMPORTED_MODULE_0__.version);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "Example");
 });
 
@@ -29901,7 +29901,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_jsx_example_jsx__WEBPACK_IMPORTED_MODULE_2__.default, null), document.querySelector('main'));
+react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_jsx_example_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], null), document.getElementById("root"));
 })();
 
 /******/ })()
