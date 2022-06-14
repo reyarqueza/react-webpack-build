@@ -1,10 +1,6 @@
-/*
- * This express server just sends back the index.html page so we can use HTML5 history from the SPA client
- */
-
 const express = require("express");
 const path = require("path");
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
 const app = express();
 
 app.use(express.static(__dirname + "/public"));
